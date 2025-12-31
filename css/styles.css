@@ -68,8 +68,6 @@ ul{
 .button:hover{
     color: var(--color-brand-dark);
     background-color: transparent;
-    border: 2px solid var(--color-brand-light);
-    border-radius: 8px;
 }
 /*Link*/
 .link{
