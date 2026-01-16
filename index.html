@@ -173,7 +173,6 @@
         </div>
       </section>
       <!--section 4-->
-
       <section class="formats-section section" id="formats-section">
         <div class="container">
           <h2
@@ -200,9 +199,10 @@
                 </symbol>
               </svg>
             </button>
-            <div class="formats-section__container swiper-container">
+
+            <div class="formats-section__container swiper">
               <ul class="formats-section__list swiper-wrapper">
-                <li class="swiper-slide">
+                <li class="formats-section__item swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -221,7 +221,7 @@
                     </div>
                   </article>
                 </li>
-                <li class="swiper-slide">
+                <li class="formats-section__item swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -239,7 +239,7 @@
                     </div>
                   </article>
                 </li>
-                <li class="swiper-slide">
+                <li class="formats-section__item swiper-slide">
                   <article class="format-card">
                     <img
                       class="format-card__image"
@@ -268,6 +268,7 @@
               type="button"
             >
               <svg
+                display="none"
                 class="carousel-arrow"
                 class="address-icon"
                 width="16"
@@ -303,7 +304,7 @@
                     class="input__control"
                     type="text"
                     name="user-name"
-                    id="user-name"
+                    id="contact-user-name"
                     placeholder="Ім’я"
                   />
                 </div>
@@ -315,7 +316,7 @@
                     class="input__control"
                     type="tel"
                     name="user-tel"
-                    id="user-tel"
+                    id="contact-user-tel"
                     placeholder="Телефон"
                   />
                 </div>
@@ -326,7 +327,7 @@
                   <input
                     class="input__control"
                     type="email"
-                    id="user-email"
+                    id="contact-user-email"
                     name="user-email"
                     placeholder="Електронна пошта"
                   />
@@ -398,18 +399,16 @@
                 </li>
               </ul>
               <div>
-                <a href="#">
-                  <!--facebook icon -->
-                  <a href="#" aria-label="Facebook">
-                    <svg class="footer__address-icon" width="32" height="32">
-                      <use href="#icon-facebook"></use>
-                      <symbol id="icon-facebook" viewBox="0 0 32 32">
-                        <path
-                          d="M0 16c0-8.837 7.163-16 16-16s16 7.163 16 16c0 8.837-7.163 16-16 16s-16-7.163-16-16zM17.668 25.408v-8.705h2.403l0.319-3h-2.721l0.004-1.501c0-0.782 0.074-1.202 1.198-1.202h1.502v-3h-2.403c-2.887 0-3.903 1.455-3.903 3.902v1.801h-1.799v3h1.799v8.705h3.602z"
-                        ></path>
-                      </symbol>
-                    </svg>
-                  </a>
+                <!--facebook icon -->
+                <a href="#" aria-label="Facebook" class="social-link">
+                  <svg class="footer__address-icon" width="32" height="32">
+                    <use href="#icon-facebook"></use>
+                    <symbol id="icon-facebook" viewBox="0 0 32 32">
+                      <path
+                        d="M0 16c0-8.837 7.163-16 16-16s16 7.163 16 16c0 8.837-7.163 16-16 16s-16-7.163-16-16zM17.668 25.408v-8.705h2.403l0.319-3h-2.721l0.004-1.501c0-0.782 0.074-1.202 1.198-1.202h1.502v-3h-2.403c-2.887 0-3.903 1.455-3.903 3.902v1.801h-1.799v3h1.799v8.705h3.602z"
+                      ></path>
+                    </symbol>
+                  </svg>
                 </a>
                 <a href="#">
                   <!--instagram icon -->
@@ -457,7 +456,7 @@
               class="input__control"
               type="text"
               name="user-name"
-              id="user-name"
+              id="modal-user-name"
               placeholder="Ім’я"
               required
             />
@@ -470,7 +469,7 @@
               class="input__control"
               type="tel"
               name="user-tel"
-              id="user-tel"
+              id="modal-user-tel"
               placeholder="Телефон"
               minlength="2"
               maxlength="10"
@@ -484,7 +483,7 @@
             <input
               class="input__control"
               type="email"
-              id="user-email"
+              id="modal-user-email"
               name="user-email"
               placeholder="Електронна пошта"
               required
